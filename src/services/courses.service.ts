@@ -91,6 +91,5 @@ export const getUsersOnCourseService = async (courseId: string) => {
 
     const query = await client.query(queryConfig);
 
-    console.log(query.rows);
     return query.rows;
 };
